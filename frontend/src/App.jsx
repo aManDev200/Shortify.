@@ -10,7 +10,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/shorten', { url: longUrl });
+      const response = await axios.post('https://shortify-backend.vercel.app/api/shorten', { url: longUrl });
       setShortUrl(response.data.shortUrl);
       setError('');
     } catch (err) {
