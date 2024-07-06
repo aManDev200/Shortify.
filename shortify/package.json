@@ -1,11 +1,11 @@
 {
   "name": "shortify",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js",
+    "build": "cd client && npm install && npm run build"
   },
   "dependencies": {
     "cors": "^2.8.5",
